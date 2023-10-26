@@ -24,6 +24,7 @@ const submitQrCode = (input) => {
     .catch((error) => {
       console.error('Error:', error);
     });
+  window.location.href = "https://erasmo8088.softr.app/scan-event"
 }
 
 function setResult(label, result) {
