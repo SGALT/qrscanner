@@ -30,6 +30,7 @@ const submitQrCode = (input) => {
 function setResult(label, result) {
   label.value = result.data;
   submitQrCode(label);
+  scanner.stop();
 }
 
 const scanner = new QrScanner(video, result => setResult(inputId, result), {
